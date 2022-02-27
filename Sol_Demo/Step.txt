@@ -1,0 +1,54 @@
+Step 1:
+Create a Blank Solution.
+
+Step 2:
+Create a three Solutions folder in the blank solution.
+	1. Host
+	2. Modules
+	3. Frameworks
+
+Step 3:
+Go to Frameworks folder => Create a Framework.Api class library project.
+
+	3.1 
+	Select the Framework.Api solutions => Right Click => Select Edit Projetc File.
+
+	Add the following statement in the file.
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	Note : Check Source Code
+
+	Note : All shareable Nuget Package must be installed in the Framework.Api Solution
+
+
+Step 4:
+Go to Modules folder, Create a Class Library Project => name of the solution should like this : Module.Command.User
+
+	4.1 
+	Add the Following Project Referance in the All Modules Solution.
+
+	Framework.Api
+
+	Note : Check Source Code
+
+
+Step 5:
+Go to Host folder, Asp.net core Web APi Solution  => Name of solution should be like this : Host.Api
+
+	5.1 
+	Add the Following Project Referance in the All Modules Solution.
+
+		Framework.Api
+
+	5.2
+	All the modules solution project referance must be add in the Host.Api
+
+	5.3
+	First Add Framework Api service in the Host.Api solution. => Go to Program.cs file =>
+		// Add Framework Api.
+		builder.Services.AddFrameworkApi(builder.Configuration);
+
+	Note : This solution must be Set as Startup project.
