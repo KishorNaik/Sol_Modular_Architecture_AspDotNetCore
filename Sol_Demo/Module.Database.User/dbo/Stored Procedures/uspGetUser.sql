@@ -19,6 +19,7 @@ AS
                         U.FirstName,
                         U.LastName,
                         U.Email,
+                        U.Salt,
                         U.HashPassword
                       FROM
                         tblUsers As U WITH(NOLOCK)

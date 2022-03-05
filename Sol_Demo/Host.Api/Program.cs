@@ -1,3 +1,5 @@
+using Module.Query.User;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,6 +12,7 @@ builder.Services.AddFrameworkApi(builder.Configuration);
 
 // Add Module
 builder.Services.AddModuleCommandUser(builder.Configuration);
+builder.Services.AddModuleQueryUser(builder.Configuration);
 
 builder.Services.AddJson(true, true);
 

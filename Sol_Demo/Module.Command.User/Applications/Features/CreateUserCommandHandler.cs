@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using MediatR;
-using Module.Command.User.Business.Rule;
 using Module.Command.User.DTO.Request;
 using Module.Command.User.Infrastructures.DataService;
+using Module.Shared.Business.Rule.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -3,7 +3,7 @@ using Framework.SqlClient.Extensions;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Module.Command.User.Business.Rule;
+using Module.Shared.Business.Rule.User;
 
 namespace Module.Command.User
 {

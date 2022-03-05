@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Module.Command.User.Applications.Features;
 using Module.Command.User.DTO.Request;
@@ -24,6 +25,7 @@ namespace Module.Command.User.Controllers
             this.mapper = mapper;
         }
 
+        [AllowAnonymous]
         [HttpPost("create")]
         public async Task<IActionResult> CreateUser([FromBody] CreateUserRequestDTO createUserRequestDTO)
         {

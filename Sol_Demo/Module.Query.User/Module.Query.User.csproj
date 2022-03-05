@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Framework.Api\Framework.Api.csproj" />
+		<ProjectReference Include="..\Module.Shared.Business.Rule.User\Module.Shared.Business.Rule.User.csproj" />
+		<ProjectReference Include="..\Module.Shared.Entity.User\Module.Shared.Entity.User.csproj" />
+	</ItemGroup>
+
+</Project>

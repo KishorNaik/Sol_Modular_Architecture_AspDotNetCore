@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module.Command.User.Business.Rule
+namespace Module.Shared.Business.Rule.User
 {
     public interface IHashPasswordRule
     {
