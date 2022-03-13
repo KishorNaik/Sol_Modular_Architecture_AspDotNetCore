@@ -4,3 +4,5 @@ global using AuthJwt.Services;
 global using Framework.ASP.Middlewares;
 global using JwtAuth.Middlewares;
 global using Module.Command.User;
+global using Module.Command.Posts;
+global using Module.Query.User;

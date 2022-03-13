@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Api\Framework.Api.csproj" />
+    <ProjectReference Include="..\Module.Shared.Entity.Posts\Module.Shared.Entity.Posts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Business\Rule\" />
+    <Folder Include="DTO\Responses\" />
+  </ItemGroup>
+
+</Project>

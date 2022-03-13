@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Framework.Api\Framework.Api.csproj" />
+    <ProjectReference Include="..\Module.Command.Posts\Module.Command.Posts.csproj" />
     <ProjectReference Include="..\Module.Command.User\Module.Command.User.csproj" />
     <ProjectReference Include="..\Module.Query.User\Module.Query.User.csproj" />
   </ItemGroup>
